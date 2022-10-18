@@ -10,10 +10,17 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    background-color: rgba(255, 242, 57, 0.932);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
-    background-color: rgba(255, 242, 57, 0.932);
+    margin: 2rem;
 }
 
 .card {
