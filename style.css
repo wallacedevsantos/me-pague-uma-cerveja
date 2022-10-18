@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: rgba(255, 242, 57, 0.932);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    margin: .5rem;
+    background-color: #ffffe4;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.389);
+    border-radius: 20px;
+    position: relative;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 250px;
+}
+
+.content {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #ffffe4);
+}
+
+.content h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.content h3::before {
+    content: '';
+    position: absolute;
+    margin: -8px 0;
+    height: 2px;
+    width: 110px;
+    background-color: green;
+    bottom: 4px;
+    border-radius: 100px;
+}
+.content p {
+    text-align: start;
+    padding: 3px;
+    font-size: 13px;
+}
+
+#leia-me {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: green;
+    color: #ffffe4;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+#leia-me:hover {
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    transition: all 0.2s ease-in-out;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 300px;
+    height: 461.08px;
+    padding: 20px;
+    background-color: #ffffe4;
+    margin: .5rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgb(0 0 0 / 39%);
+}
+
+.formulario .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.formulario label::before {
+    content: '';
+    position: absolute;
+    margin: -2px 0;
+    height: 2px;
+    width: 100px;
+    background-color: green;
+    bottom: 4px;
+    border-radius: 10px;
+}
+
+.formulario input {
+    width: 260px;
+    margin-top: 5px;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.formulario input:hover {
+    background-color: #eeeeee75;
+}
+
+.formulario input:focus-visible {
+    outline: 1px solid green;
+}
+
+#confirme-button {
+    width: 260px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: green;
+    color: #ffffe4;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+#confirme-button:hover {
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    transition: all 0.2s ease-in-out;
+}
+
+.card.active .content {
+    height: auto;
+}
+
+.card.active .content::before {
+    visibility: hidden;
+}
