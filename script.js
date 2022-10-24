@@ -1,13 +1,19 @@
-var button = document.getElementById('leia-me');
+var button = document.getElementById("leia-me");
 
-button.addEventListener('click', function() {
-    var card = document.querySelector('.card');
-    card.classList.toggle('active');
+button.addEventListener("click", function () {
+  var card = document.querySelector(".card");
+  card.classList.toggle("active");
 
-    if (card.classList.contains('active')) {
-        return button.textContent = 'Ler menos';
-    }
+  if (card.classList.contains("active")) {
+    return (button.textContent = "Ler menos");
+  }
 
-    button.textContent = 'Ler mais';
-    
+  button.textContent = "Ler mais";
 });
+
+swal = () => {
+  document.querySelectorAll("input");
+  this.setState({
+    itemvalues: [{}],
+  });
+};

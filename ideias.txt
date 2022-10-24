@@ -1,0 +1,11 @@
+http://api.whatsapp.com/send?1=pt_BR&phone=5599999999&text=sua%20mensagem
+Substitua o texto “Sua%20mensagem” pela mensagem desejada, não esquecendo que onde desejar que tenha um espaço no texto, será obrigatório o uso do “%20”.
+
+Unicode Character 'BACKSPACE' "U+0008"
+
+exemplo:
+
+http://api.whatsapp.com/send?1=pt_BR&phone=5511946522725&text=Olá%20vou%20te%20enviar%20um%20pix%20da%20cerveja!
+
+
+emitir um código pix após cadastro
