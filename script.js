@@ -10,10 +10,3 @@ button.addEventListener("click", function () {
 
   button.textContent = "Ler mais";
 });
-
-swal = () => {
-  document.querySelectorAll("input");
-  this.setState({
-    itemvalues: [{}],
-  });
-};
